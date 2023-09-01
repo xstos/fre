@@ -31,7 +31,8 @@
     "report": "npx nyc report",
     "build": "rollup -c",
     "dev": "cd demo && yarn dev",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "tojs": "tsc src/fre.ts --target esnext --outfile dist/fre.js --declaration true"
   },
   "description": "Tiny Concurrent UI library with Fiber.",
   "keywords": [
